@@ -48,7 +48,7 @@ The panel on the right shows which layout was selected and which elements were r
 
 The basic flow is:
 
-\[\begin{array}{c} \text{AdSpec + SurfaceProfile} \\[0.5em] \downarrow \\[0.5em] \texttt{resolveLayout()} \\[0.5em] \downarrow \\[0.5em] \text{choose a composition} \\[0.5em] \downarrow \\[0.5em] \text{try to fit everything} \\[0.5em] \downarrow \\[0.5em] \text{remove low priority elements if needed} \\[0.5em] \downarrow \\[0.5em] \text{calculate the final positions} \\[0.5em] \downarrow \\[0.5em] \boxed{\text{ResolvedLayout}} \\[0.5em] \downarrow \\[0.5em] \text{render the ad} \end{array} \]
+$$\begin{array}{c} \text{AdSpec + SurfaceProfile} \\downarrow \texttt{resolveLayout()} \\downarrow \text{choose a composition} \\downarrow \text{try to fit everything} \\downarrow \text{remove low priority elements if needed} \\downarrow \text{calculate the final positions} \\downarrow \boxed{\text{ResolvedLayout}} \\downarrow \text{render the ad} \end{array} $$
 
 There are two main parts.
 
